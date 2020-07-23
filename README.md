@@ -1,7 +1,5 @@
 # Opencyc
 
-https://github.com/bovlb/opencyc
-
 This is a dockerization of OpenCyc, intended to make it easier to run.
 
 To run OpenCyc, try a command like:
@@ -11,6 +9,7 @@ To run OpenCyc, try a command like:
 This will run the image detached, so omit the `-d` to run attached and gain access to the CYC prompt.
 
 The Knowledge Browser is accessible at http://localhost:3602/cgi-bin/cyccgi/cg?cb-start
+Login as `CycAdministrator` for write access.
 
 :warning: Note that this image requires at least 3GB just to start up.  Many Docker installations limit images to 2GB by default, so you may need to tweak your settings.  This is probably what the problem is if your logs (`docker logs opencyc`) ends with a line like:
 
